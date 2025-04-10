@@ -13,9 +13,8 @@ export function Navbar() {
       
         <div className="text-sm text-gray-600">Welcome to our store!</div>
         <div className="flex items-center py-2 space-x-3">
-          <Select className="w-56" defaultSelectedKeys={['USA']}
+          <Select className="w-32" defaultSelectedKeys={['USA']}
             items={countries}
-            label="Country"
             labelPlacement="outside-left"
             renderValue={(items) => items.map((item) => (
               <div key={item.key} className="flex items-center gap-2">
