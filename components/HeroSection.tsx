@@ -35,8 +35,8 @@ const HeroSection = () => {
                 Shop Now
               </Button>
 
-              <Button className='bg-white ' color='default' radius='full'
-                size='lg' variant='bordered'>
+              <Button className='bg-white ' color='default' radius='full' 
+                size='lg' variant='shadow'>
                 New Arrivals
               </Button>
 
