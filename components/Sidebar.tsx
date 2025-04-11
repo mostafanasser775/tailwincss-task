@@ -9,18 +9,18 @@ import { motion } from 'framer-motion';
 
 import { colors, priceRanges, ratings, sidebrands, sidecategories } from './data';
 
-const Sidebar = () => {
+const Sidebar = ({ismob}:{ismob?:boolean}) => {
   return (
     <motion.aside
-      className=" p-5 bg-white border border-gray-100 shadow-sm w-full min-w-80 rounded-xl"
-      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      className={` p-5 bg-white  ${!ismob &&"border border-gray-100 shadow-sm"}  w-full min-w-80 rounded-xl`}
+      initial={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
       <motion.div
+        animate="visible"
         className="space-y-6"
         initial="hidden"
-        animate="visible"
         variants={{
           hidden: { opacity: 0 },
           visible: {
@@ -38,8 +38,7 @@ const Sidebar = () => {
           <button className="text-sm text-primary hover:underline">Clear All</button>
         </motion.div>
 
-        <Accordion
-          isCompact
+        <Accordion isCompact
           defaultExpandedKeys={['categories', 'brand', 'price-range', 'color', 'rating']}
           selectionMode="multiple"
         >
@@ -100,10 +99,10 @@ const Sidebar = () => {
                 <Input
                   placeholder="Search brand..."
                   radius="sm"
-                  variant="bordered"
                   startContent={
                     <Icon className="w-5 h-5 text-gray-400" icon="mdi:magnify" />
                   }
+                  variant="bordered"
                 />
               </div>
             </motion.div>

@@ -1,17 +1,20 @@
 
 import { newProducts, popularProducts, recommendedProducts } from "@/components/data";
 import HeroSection from "@/components/HeroSection";
+import MobSidebar from "@/components/MobSidebar";
 import ProductSection from "@/components/ProductSection";
 import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 min-h-screen mb-12 bg-white">
+    <div className="flex flex-col flex-1 min-h-screen mb-12 bg-white relative">
       <HeroSection />
       {/* Main Content */}
-      <main className="flex-grow">
+      <main className="flex-grow ">
         <div className="container px-4 py-8 mx-auto">
+
           {/* Main content with sidebar and products */}
+
           <div className="flex flex-col gap-8 lg:flex-row">
             {/* Sidebar with filters - hidden on mobile, shown on larger screens */}
             <div className="hidden lg:block">
@@ -121,6 +124,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
+        <MobSidebar />
       </main>
 
     </div>
