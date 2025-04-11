@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { Button } from '@heroui/button';
+import { Input } from '@heroui/input';
 
 const FooterSection = ({ title, links }: { title: string; links: { href: string; label: string }[] }) => (
   <div>
@@ -114,17 +115,15 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">Subscribe to our newsletter to get updates on our latest offers!</p>
             <form className="flex flex-col space-y-2">
               <div className="relative">
-                <input
-                  className="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                <Input className=" bg-gray-700 text-white rounded-medium" endContent={<Button isIconOnly size='sm' variant='light'>
+                  <Icon className="h-4 w-4" icon="mdi:send" />
+                </Button>
+                }
                   placeholder="Enter your email"
                   type="email"
+                  variant='bordered'
                 />
-                <button
-                  className="absolute right-1 top-1 px-3 py-1 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
-                  type="submit"
-                >
-                  <Icon className="h-5 w-5" icon="mdi:send" />
-                </button>
+
               </div>
             </form>
             <div className="mt-4">
@@ -132,7 +131,7 @@ const Footer = () => {
               <div className="flex space-x-2">
                 {['mdi:google-play', 'mdi:apple'].map((icon: string) => (
                   <Button key={icon} isIconOnly className="bg-gray-700 hover:bg-gray-600 p-2 rounded transition-colors" href="/">
-                  <Icon className="h-6 w-6 text-white" icon={icon} />
+                    <Icon className="h-6 w-6 text-white" icon={icon} />
                   </Button>
                 ))}
               </div>
