@@ -15,7 +15,7 @@ const Sidebar = () => {
       className="w-full p-5 bg-white border border-gray-100 shadow-sm lg:w-80 rounded-xl"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       <motion.div
         className="space-y-6"
