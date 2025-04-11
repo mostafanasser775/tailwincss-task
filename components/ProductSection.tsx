@@ -1,9 +1,10 @@
 'use client'
 
 import React, { useState, useRef } from 'react';
-import ProductCard from './ProductCard';
-
 import Link from 'next/link';
+import { Icon } from '@iconify/react';
+
+import ProductCard from './ProductCard';
 
 interface ProductSectionProps {
   title: string;
@@ -45,19 +46,19 @@ const ProductSection: React.FC<ProductSectionProps> = ({
           <div>
             <h2 className="relative inline-block text-2xl font-bold text-gray-900">
               {title}
-              <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary/20"></span>
+              <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary/20" />
             </h2>
             {subtitle && <p className="mt-1 text-gray-600">{subtitle}</p>}
           </div>
           
           {viewAllLink && (
             <Link 
-              href={viewAllLink} 
-              className="flex items-center mt-2 font-medium md:mt-0 text-primary hover:text-primary-dark"
+              className="flex items-center mt-2 font-medium md:mt-0 text-primary hover:text-primary-dark" 
+              href={viewAllLink}
             >
               View All
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path clipRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" fillRule="evenodd" />
               </svg>
             </Link>
           )}
@@ -68,13 +69,11 @@ const ProductSection: React.FC<ProductSectionProps> = ({
           <div className="flex items-center mb-4">
             <div className="hidden mr-2 md:flex">
               <button 
-                onClick={() => scroll('left')}
-                className="p-1.5 rounded-full border border-gray-300 hover:bg-gray-100 text-gray-700"
                 aria-label="Scroll left"
+                className="p-1.5 rounded-full border border-gray-300 hover:bg-gray-100 text-gray-700"
+                onClick={() => scroll('left')}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
+                <Icon className="w-4 h-4" icon="mdi:chevron-left" />
               </button>
             </div>
             
@@ -85,12 +84,12 @@ const ProductSection: React.FC<ProductSectionProps> = ({
               {categories.map((category) => (
                 <button
                   key={category}
-                  onClick={() => setActiveTab(category)}
                   className={`px-4 py-2 rounded-full whitespace-nowrap text-sm font-medium transition-colors ${
                     activeTab === category 
                       ? 'bg-primary text-white' 
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
+                  onClick={() => setActiveTab(category)}
                 >
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
@@ -99,20 +98,18 @@ const ProductSection: React.FC<ProductSectionProps> = ({
             
             <div className="hidden ml-2 md:flex">
               <button 
-                onClick={() => scroll('right')}
-                className="p-1.5 rounded-full border border-gray-300 hover:bg-gray-100 text-gray-700"
                 aria-label="Scroll right"
+                className="p-1.5 rounded-full border border-gray-300 hover:bg-gray-100 text-gray-700"
+                onClick={() => scroll('right')}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <Icon className="w-4 h-4" icon="mdi:chevron-right" />
               </button>
             </div>
           </div>
         </div>
         
         {/* Products grid with animation */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {products.map((product, index) => (
             <div 
               key={product.id}
@@ -120,17 +117,17 @@ const ProductSection: React.FC<ProductSectionProps> = ({
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <ProductCard
+                brand={product.brand}
+                discount={product.discount}
                 id={product.id}
-                name={product.name}
-                price={product.price}
-                originalPrice={product.originalPrice}
                 image={product.image}
+                isFeatured={product.isFeatured}
+                isNew={product.isNew}
+                name={product.name}
+                originalPrice={product.originalPrice}
+                price={product.price}
                 rating={product.rating}
                 reviewCount={product.reviewCount}
-                isNew={product.isNew}
-                isFeatured={product.isFeatured}
-                discount={product.discount}
-                brand={product.brand}
               />
             </div>
           ))}
@@ -140,8 +137,8 @@ const ProductSection: React.FC<ProductSectionProps> = ({
         <div className="mt-8 text-center md:hidden">
           {viewAllLink && (
             <Link 
-              href={viewAllLink} 
-              className="inline-block px-6 py-2.5 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors"
+              className="inline-block px-6 py-2.5 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-colors" 
+              href={viewAllLink}
             >
               View More Products
             </Link>

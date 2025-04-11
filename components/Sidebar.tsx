@@ -12,7 +12,7 @@ import { colors, priceRanges, ratings, sidebrands, sidecategories } from './data
 const Sidebar = () => {
   return (
     <motion.aside
-      className="w-full p-5 bg-white border border-gray-100 shadow-sm lg:w-80 rounded-xl"
+      className=" p-5 bg-white border border-gray-100 shadow-sm w-full min-w-80 rounded-xl"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

@@ -14,36 +14,36 @@ export default function Home() {
           {/* Main content with sidebar and products */}
           <div className="flex flex-col gap-8 lg:flex-row">
             {/* Sidebar with filters - hidden on mobile, shown on larger screens */}
-            <div className="hidden lg:block lg:w-1/4 xl:w-1/5">
+            <div className="hidden lg:block">
               <div className="sticky top-4">
                 <Sidebar />
               </div>
             </div>
 
             {/* Product sections */}
-            <div className="w-full space-y-12 lg:w-3/4 xl:w-4/5">
+            <div className="w-full space-y-8  ">
               {/* New Products Section */}
               <ProductSection
-                title="New Arrivals"
-                subtitle="Check out our latest products"
-                viewAllLink="/new-arrivals"
                 products={newProducts}
+                subtitle="Check out our latest products"
+                title="New Arrivals"
+                viewAllLink="/new-arrivals"
               />
 
               {/* Recommended Products Section */}
               <ProductSection
-                title="Recommended For You"
-                subtitle="Based on your preferences"
-                viewAllLink="/recommended"
                 products={recommendedProducts}
+                subtitle="Based on your preferences"
+                title="Recommended For You"
+                viewAllLink="/recommended"
               />
 
               {/* Popular Products Section */}
               <ProductSection
-                title="Popular Products"
-                subtitle="Most loved by our customers"
-                viewAllLink="/popular"
                 products={popularProducts}
+                subtitle="Most loved by our customers"
+                title="Popular Products"
+                viewAllLink="/popular"
               />
             </div>
           </div>
