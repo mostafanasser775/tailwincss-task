@@ -69,9 +69,7 @@ export const newProducts = [
         rating: 4.5,
         reviewCount: 128,
         discount: 35,
-        brand: 'SoundMaster',
-        isNew: true,
-        isFeatured: false
+        brand: 'SoundMaster'
     },
     {
         id: 'new-2',
@@ -82,9 +80,7 @@ export const newProducts = [
         rating: 4.2,
         reviewCount: 95,
         discount: 25,
-        brand: 'TechFit',
-        isNew: true,
-        isFeatured: false
+        brand: 'TechFit'
     },
     {
         id: 'new-3',
@@ -95,9 +91,7 @@ export const newProducts = [
         rating: 4.7,
         reviewCount: 64,
         discount: 25,
-        brand: 'CaptureX',
-        isNew: true,
-        isFeatured: false
+        brand: 'CaptureX'
     },
     {
         id: 'new-4',
@@ -108,9 +102,7 @@ export const newProducts = [
         rating: 4.4,
         reviewCount: 112,
         discount: 25,
-        brand: 'SoundMaster',
-        isNew: true,
-        isFeatured: false
+        brand: 'SoundMaster'
     },
     {
         id: 'new-5',
@@ -121,9 +113,7 @@ export const newProducts = [
         rating: 4.6,
         reviewCount: 78,
         discount: 20,
-        brand: 'GamePro',
-        isNew: true,
-        isFeatured: false
+        brand: 'GamePro'
     },
     {
         id: 'new-6',
@@ -134,9 +124,7 @@ export const newProducts = [
         rating: 4.5,
         reviewCount: 200,
         discount: 20,
-        brand: 'AudioPro',
-        isNew: true,
-        isFeatured: false
+        brand: 'AudioPro'
     },
     {
         id: 'new-7',
@@ -147,9 +135,7 @@ export const newProducts = [
         rating: 4.3,
         reviewCount: 150,
         discount: 22,
-        brand: 'CaseCraft',
-        isNew: true,
-        isFeatured: false
+        brand: 'CaseCraft'
     }
 ];
 
@@ -162,10 +148,9 @@ export const recommendedProducts = [
         image: 'https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg',
         rating: 4.8,
         reviewCount: 215,
+        isFeatured: true,
         discount: 33,
-        brand: 'LuxeLeather',
-        isNew: false,
-        isFeatured: true
+        brand: 'LuxeLeather'
     },
     {
         id: 'rec-2',
@@ -175,10 +160,9 @@ export const recommendedProducts = [
         image: 'https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg',
         rating: 4.6,
         reviewCount: 183,
+        isFeatured: true,
         discount: 29,
-        brand: 'EcoLife',
-        isNew: false,
-        isFeatured: true
+        brand: 'EcoLife'
     },
     {
         id: 'rec-3',
@@ -188,10 +172,9 @@ export const recommendedProducts = [
         image: 'https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg',
         rating: 4.3,
         reviewCount: 97,
+        isFeatured: true,
         discount: 25,
-        brand: 'PowerTech',
-        isNew: false,
-        isFeatured: true
+        brand: 'PowerTech'
     },
     {
         id: 'rec-4',
@@ -201,10 +184,9 @@ export const recommendedProducts = [
         image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
         rating: 4.5,
         reviewCount: 124,
+        isFeatured: true,
         discount: 30,
-        brand: 'TechEssentials',
-        isNew: false,
-        isFeatured: true
+        brand: 'TechEssentials'
     },
     {
         id: 'rec-5',
@@ -214,10 +196,9 @@ export const recommendedProducts = [
         image: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
         rating: 4.7,
         reviewCount: 156,
+        isFeatured: true,
         discount: 33,
-        brand: 'EcoKitchen',
-        isNew: false,
-        isFeatured: true
+        brand: 'EcoKitchen'
     },
     {
         id: 'rec-6',
@@ -227,10 +208,9 @@ export const recommendedProducts = [
         image: 'https://i.imgur.com/qNOjJje.jpeg',
         rating: 4.7,
         reviewCount: 180,
+        isFeatured: true,
         discount: 20,
-        brand: 'SportTech',
-        isNew: false,
-        isFeatured: true
+        brand: 'SportTech'
     },
     {
         id: 'rec-7',
@@ -240,10 +220,9 @@ export const recommendedProducts = [
         image: 'https://i.imgur.com/62gGzeF.jpeg',
         rating: 4.6,
         reviewCount: 140,
+        isFeatured: true,
         discount: 33,
-        brand: 'GlamourStep',
-        isNew: false,
-        isFeatured: true
+        brand: 'GlamourStep'
     }
 ];
 
@@ -257,9 +236,7 @@ export const popularProducts = [
         rating: 4.6,
         reviewCount: 342,
         discount: 20,
-        brand: 'SoundMaster',
-        isNew: false,
-        isFeatured: false
+        brand: 'SoundMaster'
     },
     {
         id: 'pop-2',
@@ -270,9 +247,7 @@ export const popularProducts = [
         rating: 4.4,
         reviewCount: 187,
         discount: 22,
-        brand: 'SecureHome',
-        isNew: false,
-        isFeatured: false
+        brand: 'SecureHome'
     },
     {
         id: 'pop-3',
@@ -283,9 +258,7 @@ export const popularProducts = [
         rating: 4.8,
         reviewCount: 256,
         discount: 28,
-        brand: 'ChefElite',
-        isNew: false,
-        isFeatured: false
+        brand: 'ChefElite'
     },
     {
         id: 'pop-4',
@@ -296,9 +269,7 @@ export const popularProducts = [
         rating: 4.5,
         reviewCount: 312,
         discount: 29,
-        brand: 'TechFit',
-        isNew: false,
-        isFeatured: false
+        brand: 'TechFit'
     },
     {
         id: 'pop-5',
@@ -309,9 +280,7 @@ export const popularProducts = [
         rating: 4.7,
         reviewCount: 278,
         discount: 33,
-        brand: 'PowerTech',
-        isNew: false,
-        isFeatured: false
+        brand: 'PowerTech'
     },
     {
         id: 'pop-6',
@@ -322,9 +291,7 @@ export const popularProducts = [
         rating: 4.4,
         reviewCount: 120,
         discount: 27,
-        brand: 'SummerVibes',
-        isNew: false,
-        isFeatured: false
+        brand: 'SummerVibes'
     },
     {
         id: 'pop-7',
@@ -335,9 +302,7 @@ export const popularProducts = [
         rating: 4.5,
         reviewCount: 160,
         discount: 32,
-        brand: 'ActiveWear',
-        isNew: false,
-        isFeatured: false
+        brand: 'ActiveWear'
     }
 ];
 
@@ -415,3 +380,49 @@ export const brands = [
         url: '/brands/lenovo'
     }
 ];
+
+//sidebar data
+
+export const priceRanges = [
+    { id: 'price-1', label: 'Under $25', value: 'under-25' },
+    { id: 'price-2', label: '$25 to $50', value: '25-50' },
+    { id: 'price-3', label: '$50 to $100', value: '50-100' },
+    { id: 'price-4', label: '$100 to $200', value: '100-200' },
+    { id: 'price-5', label: 'Over $200', value: 'over-200' },
+  ];
+  
+ export  const colors = [
+    { name: 'Black', value: 'black', color: 'bg-black' },
+    { name: 'White', value: 'white', color: 'bg-white border border-gray-300' },
+    { name: 'Red', value: 'red', color: 'bg-red-500' },
+    { name: 'Blue', value: 'blue', color: 'bg-blue-500' },
+    { name: 'Green', value: 'green', color: 'bg-green-500' },
+    { name: 'Yellow', value: 'yellow', color: 'bg-yellow-400' },
+    { name: 'Purple', value: 'purple', color: 'bg-purple-500' },
+    { name: 'Pink', value: 'pink', color: 'bg-pink-500' },
+    { name: 'Gray', value: 'gray', color: 'bg-gray-500' },
+  ];
+  
+ export const sidebrands = [
+    { id: 'brand-1', name: 'Apple', count: 42 },
+    { id: 'brand-2', name: 'Samsung', count: 36 },
+    { id: 'brand-3', name: 'Sony', count: 28 },
+    { id: 'brand-4', name: 'LG', count: 21 },
+    { id: 'brand-5', name: 'Dell', count: 19 },
+    { id: 'brand-6', name: 'Asus', count: 17 },
+    { id: 'brand-7', name: 'Lenovo', count: 15 },
+    { id: 'brand-8', name: 'HP', count: 14 },
+    { id: 'brand-9', name: 'Acer', count: 12 },
+    { id: 'brand-10', name: 'Microsoft', count: 10 },
+  ];
+  
+ export  const ratings = [5, 4, 3, 2, 1];
+  
+ export  const sidecategories = [
+    { id: 'cat-1', name: 'Electronics', count: 120 },
+    { id: 'cat-2', name: 'Clothing', count: 85 },
+    { id: 'cat-3', name: 'Home & Kitchen', count: 74 },
+    { id: 'cat-4', name: 'Beauty & Personal Care', count: 62 },
+    { id: 'cat-5', name: 'Sports & Outdoors', count: 48 },
+  ];
+  
