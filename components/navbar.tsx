@@ -9,6 +9,7 @@ import { countries } from './data';
 import CompareModal from './CompareModal';
 import WishList from './WishListBtn';
 import { UserAvatar } from './UserAvtar';
+import CartBtn from './CartBtn';
 
 export function Navbar() {
   return (
@@ -111,17 +112,7 @@ export function Navbar() {
 
               <WishList />
 
-              <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link className="flex flex-col items-center text-gray-600 transition-colors hover:text-primary" href="/cart">
-                  <div className="relative">
-                    <Icon className="w-6 h-6" icon="mdi:cart-outline" />
-                    <span className="absolute flex items-center justify-center w-4 h-4 text-xs text-white rounded-full -top-2 -right-2 bg-primary">
-                      2
-                    </span>
-                  </div>
-                  <span className="mt-1 text-xs">Cart</span>
-                </Link>
-              </motion.div>
+              <CartBtn />
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <UserAvatar />
               </motion.div>

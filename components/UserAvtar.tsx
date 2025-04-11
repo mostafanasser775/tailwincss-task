@@ -3,7 +3,7 @@ import {Avatar} from "@heroui/avatar";
 
 export function UserAvatar() {
     return(
-        <Dropdown placement="bottom-end">
+        <Dropdown placement="bottom-end" className="w-72">
         <DropdownTrigger>
           <Avatar
             isBordered

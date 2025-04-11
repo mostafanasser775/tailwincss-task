@@ -193,7 +193,7 @@ const HeroSection = () => {
                     ))}
                   </div>
                   <span className="ml-1 text-xs text-gray-500">
-                    <CountUp start={0} end={2500} duration={3} />+</span>
+                    <CountUp duration={3} end={2500} start={0} />+</span>
                 </div>
                 <p className="text-sm font-medium">Trusted by thousands</p>
               </motion.div>
