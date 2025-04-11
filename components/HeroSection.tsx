@@ -64,21 +64,15 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
-                  color="primary"
+                <Button color="primary"
                   endContent={<Icon className="w-5 h-5" icon="mdi:arrow-right" />}
-                  radius="full"
-                  size="lg"
-                  variant="shadow"
+                  radius="full" size="lg" variant="shadow"
                 >
                   Shop Now
                 </Button>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} >
                 <Button
                   className="bg-white"
                   color="default"
@@ -99,8 +93,7 @@ const HeroSection = () => {
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: {
-                  opacity: 1,
-                  y: 0,
+                  opacity: 1, y: 0,
                   transition: { staggerChildren: 0.2 },
                 },
               }}
@@ -110,7 +103,7 @@ const HeroSection = () => {
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
               >
                 <div className="text-2xl font-bold text-primary">
-                  <CountUp duration={2} end={50} start={0} />+
+                  <CountUp duration={3} end={50} start={0} />+
                 </div>
                 <div className="text-xs text-gray-500">Brands</div>
               </motion.div>
@@ -119,7 +112,7 @@ const HeroSection = () => {
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
               >
                 <div className="text-2xl font-bold text-primary">
-                  <CountUp duration={2} end={10} start={0} />k+
+                  <CountUp duration={3} end={10} start={0} />k+
                 </div>
                 <div className="text-xs text-gray-500">Products</div>
               </motion.div>
@@ -144,7 +137,7 @@ const HeroSection = () => {
                 <div className="w-10 h-10 overflow-hidden bg-gray-400 border-2 border-white rounded-full" />
               </div>
               <div className="text-sm text-gray-600">
-                <span className="font-semibold">Trusted by <CountUp duration={2} end={2500} start={0}/>+</span> customers worldwide
+                <span className="font-semibold">Trusted by <CountUp duration={3} end={2500} start={0} />+</span> customers worldwide
               </div>
             </motion.div>
           </motion.div>
@@ -158,20 +151,16 @@ const HeroSection = () => {
             <div className="relative h-[350px] md:h-[500px] w-full rounded-2xl overflow-hidden bg-white shadow-lg">
               <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50">
                 <div className="relative w-full h-full">
-                  <Image
-                    fill
-                    alt="Premium Product"
+                  <Image fill alt="Premium Product"
                     className="object-contain p-4 rounded-large"
                     src="https://img.freepik.com/free-photo/discount-headphones-podium_23-2150165470.jpg?t=st=1744320334~exp=1744323934~hmac=42bb0e99b4d2b1f76ce5004929e56f07cbc1cbf84903d5dccc8f0a54b3fe97fc&w=826"
                   />
                 </div>
               </div>
 
-              <motion.div
-                animate={{ scale: 1 }}
+              <motion.div animate={{ scale: 1 }}
                 className="absolute px-3 py-1 text-sm font-bold text-white bg-red-500 rounded-full top-4 left-4"
-                initial={{ scale: 0 }}
-                transition={{ duration: 0.5 }}
+                initial={{ scale: 0 }} transition={{ duration: 0.5 }}
               >
                 -30% OFF
               </motion.div>
@@ -203,7 +192,8 @@ const HeroSection = () => {
                       <Icon key={i} className="w-4 h-4 text-yellow-400" icon="mdi:star" />
                     ))}
                   </div>
-                  <span className="ml-1 text-xs text-gray-500">(2,500+)</span>
+                  <span className="ml-1 text-xs text-gray-500">
+                    <CountUp start={0} end={2500} duration={3} />+</span>
                 </div>
                 <p className="text-sm font-medium">Trusted by thousands</p>
               </motion.div>

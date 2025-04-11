@@ -4,30 +4,30 @@ import Link from 'next/link';
 import { Select, SelectItem } from "@heroui/select";
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
+
 import { countries } from './data';
+import CompareModal from './CompareModal';
+import WishList from './WishListBtn';
+import { UserAvatar } from './UserAvtar';
 
 export function Navbar() {
   return (
     <>
       <motion.header
-        className="w-full h-12 bg-gray-100 shadow-md"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+        animate={{ y: 0, opacity: 1 }} className="w-full h-12 bg-gray-100 shadow-md"
+        initial={{ y: -50, opacity: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <div className="container flex items-center justify-between px-4 mx-auto">
-          <motion.div
-            className="text-sm text-gray-600"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          <motion.div animate={{ opacity: 1 }}
+            className="text-sm text-gray-600" initial={{ opacity: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             Welcome to our store!
           </motion.div>
           <motion.div
+            animate={{ opacity: 1 }}
             className="flex items-center py-2 space-x-3"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             <Select
@@ -59,17 +59,17 @@ export function Navbar() {
       </motion.header>
 
       <motion.nav
+        animate={{ y: 0, opacity: 1 }}
         className="sticky top-0 z-20 py-4 bg-white shadow-lg"
         initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <motion.div
+              animate={{ opacity: 1 }}
               className="text-2xl font-bold text-primary"
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <Link className="flex items-center text-gray-800 hover:text-primary" href="/">
@@ -78,9 +78,9 @@ export function Navbar() {
               </Link>
             </motion.div>
             <motion.div
+              animate={{ opacity: 1 }}
               className="w-full max-w-md md:w-1/2"
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
               <div className="relative">
@@ -95,9 +95,9 @@ export function Navbar() {
               </div>
             </motion.div>
             <motion.div
+              animate="visible"
               className="flex items-center space-x-6"
               initial="hidden"
-              animate="visible"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: {
@@ -107,28 +107,10 @@ export function Navbar() {
                 },
               }}
             >
-              <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link className="flex flex-col items-center text-gray-600 transition-colors hover:text-primary" href="/compare">
-                  <div className="relative">
-                    <Icon className="w-6 h-6" icon="mdi:scale-balance" />
-                    <span className="absolute flex items-center justify-center w-4 h-4 text-xs text-gray-800 bg-gray-200 rounded-full -top-2 -right-2">
-                      0
-                    </span>
-                  </div>
-                  <span className="mt-1 text-xs">Compare</span>
-                </Link>
-              </motion.div>
-              <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link className="flex flex-col items-center text-gray-600 transition-colors hover:text-primary" href="/wishlist">
-                  <div className="relative">
-                    <Icon className="w-6 h-6" icon="mdi:heart-outline" />
-                    <span className="absolute flex items-center justify-center w-4 h-4 text-xs text-gray-800 bg-gray-200 rounded-full -top-2 -right-2">
-                      0
-                    </span>
-                  </div>
-                  <span className="mt-1 text-xs">Wishlist</span>
-                </Link>
-              </motion.div>
+              <CompareModal />
+
+              <WishList />
+
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <Link className="flex flex-col items-center text-gray-600 transition-colors hover:text-primary" href="/cart">
                   <div className="relative">
@@ -141,10 +123,7 @@ export function Navbar() {
                 </Link>
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <Link className="flex flex-col items-center text-gray-600 transition-colors hover:text-primary" href="/account">
-                  <Icon className="w-6 h-6" icon="mdi:account-outline" />
-                  <span className="mt-1 text-xs">Account</span>
-                </Link>
+                <UserAvatar />
               </motion.div>
             </motion.div>
           </div>
