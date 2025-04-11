@@ -17,26 +17,24 @@ const HeroSection = () => {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <motion.div
-          animate={{ scale: 1 }}
+          animate={{ scale: [1, 1.1, 1], x: [0, 20, 0], y: [0, -20, 0] }}
           className="absolute top-0 right-0 -mt-16 -mr-32 rounded-full w-96 h-96 bg-primary/5"
-          initial={{ scale: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
-          animate={{ scale: 1 }}
+          animate={{ scale: [1, 1.1, 1], x: [0, -20, 0], y: [0, 20, 0] }}
           className="absolute bottom-0 left-0 w-64 h-64 -mb-10 -ml-20 rounded-full bg-secondary/5"
-          initial={{ scale: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
-          animate={{ opacity: 1 }}
-          className="absolute w-20 h-20 rounded-full top-1/3 left-1/4 bg-accent/10" initial={{ opacity: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          animate={{ opacity: [0.8, 1, 0.8], x: [0, 10, 0], y: [0, -10, 0] }}
+          className="absolute w-20 h-20 rounded-full top-1/3 left-1/4 bg-accent/10"
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
-          animate={{ opacity: 1 }}
-          className="absolute w-32 h-32 rounded-full bottom-1/4 right-1/3 bg-primary/10" initial={{ opacity: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
+          animate={{ opacity: [0.8, 1, 0.8], x: [0, -10, 0], y: [0, 10, 0] }}
+          className="absolute w-32 h-32 rounded-full bottom-1/4 right-1/3 bg-primary/10"
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         />
       </div>
 

@@ -28,7 +28,7 @@ export const CategoryCarousel = () => {
     return (
         <div className="w-full bg-content2 py-8 relative">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="relative overflow-hidden px-14">
+                <div className="relative overflow-hidden ">
                     <motion.div
                         animate={{ opacity: 1, y: 0 }}
                         className="grid grid-cols-1 md:grid-cols-4 gap-4"
