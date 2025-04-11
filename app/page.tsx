@@ -23,30 +23,23 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Product sections */}
-            <div className="w-full space-y-8  ">
-              {/* New Products Section */}
+            <div className="w-full space-y-4  ">
               <ProductSection
                 products={newProducts}
                 subtitle="Check out our latest products"
                 title="New Arrivals"
-                viewAllLink="/new-arrivals"
               />
 
-              {/* Recommended Products Section */}
-              <ProductSection
-                products={recommendedProducts}
-                subtitle="Based on your preferences"
-                title="Recommended For You"
-                viewAllLink="/recommended"
-              />
-
-              {/* Popular Products Section */}
               <ProductSection
                 products={popularProducts}
                 subtitle="Most loved by our customers"
                 title="Popular Products"
-                viewAllLink="/popular"
+              />
+
+              <ProductSection
+                products={recommendedProducts}
+                subtitle="Based on your preferences"
+                title="Recommended For You"
               />
             </div>
           </div>

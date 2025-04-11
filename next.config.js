@@ -6,7 +6,9 @@ const nextConfig = {
             'img.freepik.com',
             'images.unsplash.com',
             "fakestoreapi.com",
-            "i.imgur.com"
+            "i.imgur.com",
+            "www.travelandleisure.com",
+            "m.media-amazon.com"
         ],
       },
 };

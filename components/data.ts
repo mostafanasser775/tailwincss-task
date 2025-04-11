@@ -136,6 +136,17 @@ export const newProducts = [
         reviewCount: 150,
         discount: 22,
         brand: 'CaseCraft'
+    },
+    {
+        id: 'new-8',
+        name: 'Compact Travel Power Adapter',
+        price: 19.99,
+        originalPrice: 24.99,
+        image: 'https://www.travelandleisure.com/thmb/_rdwEdf9oJRcpTDA_9qhPhOFcvw=/fit-in/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/epicka-universal-travel-adapter-51dc85f0519144aabb98af1b6f36a546.jpg',
+        rating: 4.4,
+        reviewCount: 80,
+        discount: 20,
+        brand: 'TravelTech'
     }
 ];
 
@@ -187,42 +198,6 @@ export const recommendedProducts = [
         isFeatured: true,
         discount: 30,
         brand: 'TechEssentials'
-    },
-    {
-        id: 'rec-5',
-        name: 'Bamboo Cutting Board Set',
-        price: 19.99,
-        originalPrice: 29.99,
-        image: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
-        rating: 4.7,
-        reviewCount: 156,
-        isFeatured: true,
-        discount: 33,
-        brand: 'EcoKitchen'
-    },
-    {
-        id: 'rec-6',
-        name: 'Futuristic Holographic Soccer Cleats',
-        price: 39,
-        originalPrice: 49.99,
-        image: 'https://i.imgur.com/qNOjJje.jpeg',
-        rating: 4.7,
-        reviewCount: 180,
-        isFeatured: true,
-        discount: 20,
-        brand: 'SportTech'
-    },
-    {
-        id: 'rec-7',
-        name: 'Rainbow Glitter High Heels',
-        price: 39,
-        originalPrice: 59.99,
-        image: 'https://i.imgur.com/62gGzeF.jpeg',
-        rating: 4.6,
-        reviewCount: 140,
-        isFeatured: true,
-        discount: 33,
-        brand: 'GlamourStep'
     }
 ];
 
@@ -303,6 +278,83 @@ export const popularProducts = [
         reviewCount: 160,
         discount: 32,
         brand: 'ActiveWear'
+    },
+    {
+        id: 'pop-8',
+        name: 'Ergonomic Office Chair',
+        price: 149.99,
+        originalPrice: 199.99,
+        image: 'https://m.media-amazon.com/images/I/61lWXN4DHfL._AC_SX569_.jpg',
+        rating: 4.7,
+        reviewCount: 300,
+        discount: 25,
+        brand: 'ComfortSeating'
+    },
+    {
+        id: 'pop-9',
+        name: 'Smart LED Desk Lamp',
+        price: 39.99,
+        originalPrice: 49.99,
+        image: 'https://m.media-amazon.com/images/I/51KMkV2hN6L._AC_SX679_.jpg',
+        rating: 4.6,
+        reviewCount: 220,
+        discount: 20,
+        brand: 'BrightTech'
+    },
+    {
+        id: 'pop-10',
+        name: 'Noise-Cancelling Over-Ear Headphones',
+        price: 99.99,
+        originalPrice: 129.99,
+        image: 'https://m.media-amazon.com/images/I/61ltFSmmglL._AC_SY679_.jpg',
+        rating: 4.8,
+        reviewCount: 400,
+        discount: 23,
+        brand: 'AudioMax'
+    },
+    {
+        id: 'pop-11',
+        name: 'Portable Air Purifier',
+        price: 59.99,
+        originalPrice: 79.99,
+        image: 'https://m.media-amazon.com/images/I/71tpOZEW0eL._AC_SX569_.jpg',
+        rating: 4.5,
+        reviewCount: 180,
+        discount: 25,
+        brand: 'PureAir'
+    },
+    {
+        id: 'pop-12',
+        name: 'Wireless Gaming Mouse',
+        price: 49.99,
+        originalPrice: 69.99,
+        image: 'https://m.media-amazon.com/images/I/51xOlh7e08L._AC_SX569_.jpg',
+        rating: 4.7,
+        reviewCount: 250,
+        discount: 28,
+        brand: 'GameGear'
+    },
+    {
+        id: 'pop-13',
+        name: '4K Ultra HD Smart TV',
+        price: 499.99,
+        originalPrice: 599.99,
+        image: 'https://m.media-amazon.com/images/I/61B7dn9ZUYL.__AC_SY300_SX300_QL70_ML2_.jpg',
+        rating: 4.9,
+        reviewCount: 500,
+        discount: 17,
+        brand: 'VisionTech'
+    },
+    {
+        id: 'pop-14',
+        name: 'Compact Coffee Maker',
+        price: 79.99,
+        originalPrice: 99.99,
+        image: 'https://m.media-amazon.com/images/I/61caRAyvc-L._AC_SY879_.jpg',
+        rating: 4.6,
+        reviewCount: 150,
+        discount: 20,
+        brand: 'BrewMaster'
     }
 ];
 
@@ -389,9 +441,9 @@ export const priceRanges = [
     { id: 'price-3', label: '$50 to $100', value: '50-100' },
     { id: 'price-4', label: '$100 to $200', value: '100-200' },
     { id: 'price-5', label: 'Over $200', value: 'over-200' },
-  ];
-  
- export  const colors = [
+];
+
+export const colors = [
     { name: 'Black', value: 'black', color: 'bg-black' },
     { name: 'White', value: 'white', color: 'bg-white border border-gray-300' },
     { name: 'Red', value: 'red', color: 'bg-red-500' },
@@ -401,9 +453,9 @@ export const priceRanges = [
     { name: 'Purple', value: 'purple', color: 'bg-purple-500' },
     { name: 'Pink', value: 'pink', color: 'bg-pink-500' },
     { name: 'Gray', value: 'gray', color: 'bg-gray-500' },
-  ];
-  
- export const sidebrands = [
+];
+
+export const sidebrands = [
     { id: 'brand-1', name: 'Apple', count: 42 },
     { id: 'brand-2', name: 'Samsung', count: 36 },
     { id: 'brand-3', name: 'Sony', count: 28 },
@@ -414,15 +466,14 @@ export const priceRanges = [
     { id: 'brand-8', name: 'HP', count: 14 },
     { id: 'brand-9', name: 'Acer', count: 12 },
     { id: 'brand-10', name: 'Microsoft', count: 10 },
-  ];
-  
- export  const ratings = [5, 4, 3, 2, 1];
-  
- export  const sidecategories = [
+];
+
+export const ratings = [5, 4, 3, 2, 1];
+
+export const sidecategories = [
     { id: 'cat-1', name: 'Electronics', count: 120 },
     { id: 'cat-2', name: 'Clothing', count: 85 },
     { id: 'cat-3', name: 'Home & Kitchen', count: 74 },
     { id: 'cat-4', name: 'Beauty & Personal Care', count: 62 },
     { id: 'cat-5', name: 'Sports & Outdoors', count: 48 },
-  ];
-  
+];
