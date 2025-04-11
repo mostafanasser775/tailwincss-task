@@ -17,47 +17,16 @@ export const menuItems = [
 ];
 
 export const categories = [
-    {
-        name: 'Electronics',
-        href: '/category/electronics',
-        //   icon: <Icon icon="mdi:cellphone" className="w-6 h-6" />
-    },
-    {
-        name: 'Fashion',
-        href: '/category/fashion',
-        //   icon: <Icon icon="mdi:tshirt-crew" className="w-6 h-6" />
-    },
-    {
-        name: 'Home & Garden',
-        href: '/category/home-garden',
-        //   icon: <Icon icon="mdi:home-outline" className="w-6 h-6" />
-    },
-    {
-        name: 'Beauty',
-        href: '/category/beauty',
-        //   icon: <Icon icon="mdi:lipstick" className="w-6 h-6" />
-    },
-    {
-        name: 'Sports',
-        href: '/category/sports',
-        //   icon: <Icon icon="mdi:soccer" className="w-6 h-6" />
-    },
-    {
-        name: 'Toys',
-        href: '/category/toys',
-        //   icon: <Icon icon="mdi:toy-brick" className="w-6 h-6" />
-    },
-    {
-        name: 'Books',
-        href: '/category/books',
-        //   icon: <Icon icon="mdi:book-open-page-variant" className="w-6 h-6" />
-    },
-    {
-        name: 'Automotive',
-        href: '/category/automotive',
-        //   icon: <Icon icon="mdi:car" className="w-6 h-6" />
-    },
-];
+    { id: 1, name: "Fashion", image: "https://m.media-amazon.com/images/I/71BVvCU3+aL._AC_SX679_.jpg" },
+    { id: 2, name: "Electronics", image: "https://m.media-amazon.com/images/I/61FUG6k43EL._AC_SX569_.jpg" },
+    { id: 3, name: "Home & Living", image: "https://images-eu.ssl-images-amazon.com/images/G/42/Egypt-hq/2023/img/Home/XCM_CUTTLE_1631808_3414975_379x304_1X_en_AE._SY304_CB578425757_.jpg" },
+    { id: 4, name: "Sports", image: "https://images-eu.ssl-images-amazon.com/images/G/42/VAS_MENA/2025/GW/CC/TV/XCM_CUTTLE_ORIGIN_1692398_3617320_379x304_1X_en_AE_Version_11._SY304_CB550569634_.jpg" },
+    { id: 5, name: "Books", image: "https://m.media-amazon.com/images/I/71kbMK1cjyL._AC_SX569_.jpg" },
+    { id: 6, name: "Food", image: "https://m.media-amazon.com/images/I/71z7HgX8LFL._AC_SX679_.jpg" },
+    { id: 7, name: "Movies", image: "https://m.media-amazon.com/images/I/71TJBMd5MBL._AC_SY679_.jpg" },
+    { id: 8, name: "Gaming", image: "https://m.media-amazon.com/images/I/71wR-thJvtL.__AC_SY300_SX300_QL70_ML2_.jpg" }
+  ];
+  
 
 export const newProducts = [
     {
@@ -362,78 +331,61 @@ export const brands = [
     {
         id: 'brand-1',
         name: 'Apple',
-        logo: 'https://placehold.co/200x80?text=Apple',
-        url: '/brands/apple'
+        logo: 'https://cdn.comparably.com/27153771/l/25351_logo_apple.png',
     },
-    {
-        id: 'brand-2',
-        name: 'Samsung',
-        logo: 'https://placehold.co/200x80?text=Samsung',
-        url: '/brands/samsung'
-    },
+ 
     {
         id: 'brand-3',
         name: 'Sony',
-        logo: 'https://placehold.co/200x80?text=Sony',
-        url: '/brands/sony'
+        logo: 'https://cdn.comparably.com/27279350/l/71176_logo_sony.png',
     },
     {
         id: 'brand-4',
         name: 'LG',
-        logo: 'https://placehold.co/200x80?text=LG',
-        url: '/brands/lg'
+        logo: 'https://cdn.comparably.com/24749373/l/74660/logo.jpg',
     },
     {
         id: 'brand-5',
         name: 'Dell',
-        logo: 'https://placehold.co/200x80?text=Dell',
-        url: '/brands/dell'
+        logo: 'https://cdn.comparably.com/27487801/l/26589_logo_dell.png',
     },
     {
         id: 'brand-6',
         name: 'Asus',
-        logo: 'https://placehold.co/200x80?text=Asus',
-        url: '/brands/asus'
+        logo: 'https://cdn.comparably.com/26339145/l/91077/logo.jpg',
     },
     {
         id: 'brand-7',
         name: 'Nike',
-        logo: 'https://placehold.co/200x80?text=Nike',
-        url: '/brands/nike'
+        logo: 'https://cdn.comparably.com/27153841/l/34480/34480_logo_nike.png',
     },
     {
         id: 'brand-8',
         name: 'Adidas',
-        logo: 'https://placehold.co/200x80?text=Adidas',
-        url: '/brands/adidas'
+        logo: 'https://cdn.comparably.com/25731500/l/32459/company_logo_32459.png',
     },
     {
         id: 'brand-9',
         name: 'Philips',
-        logo: 'https://placehold.co/200x80?text=Philips',
-        url: '/brands/philips'
+        logo: 'https://cdn.comparably.com/27457562/l/23258/23258_logo_philips.png',
     },
     {
         id: 'brand-10',
         name: 'Canon',
-        logo: 'https://placehold.co/200x80?text=Canon',
-        url: '/brands/canon'
+        logo: 'https://cdn.comparably.com/24749373/l/99684/company_logo_99684.png',
     },
     {
         id: 'brand-11',
         name: 'HP',
-        logo: 'https://placehold.co/200x80?text=HP',
-        url: '/brands/hp'
+        logo: 'https://cdn.comparably.com/27244309/l/28629/28629_logo_28629.png',
     },
     {
         id: 'brand-12',
         name: 'Lenovo',
-        logo: 'https://placehold.co/200x80?text=Lenovo',
-        url: '/brands/lenovo'
+        logo: 'https://cdn.comparably.com/27133842/l/26527/logo.jpg',
     }
 ];
 
-//sidebar data
 
 export const priceRanges = [
     { id: 'price-1', label: 'Under $25', value: 'under-25' },

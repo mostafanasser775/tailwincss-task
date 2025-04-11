@@ -74,7 +74,7 @@ export function Navbar() {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <Link className="flex items-center text-gray-800 hover:text-primary" href="/">
-                <Icon className="w-8 h-8 mr-2" icon="mdi:shopping-outline" />
+                <Icon className="w-8 h-8 mr-2" icon="mdi:shopping-outline text-primary" />
                 ShopMart
               </Link>
             </motion.div>

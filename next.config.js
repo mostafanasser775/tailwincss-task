@@ -8,7 +8,11 @@ const nextConfig = {
             "fakestoreapi.com",
             "i.imgur.com",
             "www.travelandleisure.com",
-            "m.media-amazon.com"
+            "m.media-amazon.com",
+            "cdn.comparably.com",
+            "www.comparably.com",
+            "via.placeholder.com",
+            "img.heroui.chat"
         ],
       },
 };
